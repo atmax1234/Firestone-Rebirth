@@ -1,0 +1,19 @@
+{
+    "economy":{
+        "goldCoin": "<:Gold_Coin:939923358877896764>",
+        "Rich": "<:uber_rich:939923834608435220>"
+    },
+    "general":{
+        "success": "<:Verified_Developer_Badge_SkyBlue:899282294685188139>",
+        "fail": "<:Do_Not_Disturb:899278492536021002>"
+    },
+    "lottary":{
+        "jackpot": "<a:jackpot:1213557833983856744>",
+        "bell": "<a:jp_bell:1213557837590958162>",
+        "cherry": "<a:jp_cherry:1213557843593142283>",
+        "gem": "<a:jp_diamond:1213557835934474240>",
+        "lemon": "<a:jp_lemon:1213557842158813245>",
+        "seven": "<a:jp_seven:1213555203916169357>",
+        "slotsIcon": "<a:jp_slots:1213557840019718165>"
+    }
+}

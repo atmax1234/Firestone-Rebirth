@@ -1,0 +1,24 @@
+{
+  "name": "puzzle-game-adventure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "discord-rock-paper-scissor": "^1.2.2",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.4.5",
+    "glob": "^10.3.10",
+    "moment": "^2.30.1",
+    "mongoose": "^8.2.0",
+    "path": "^0.12.7",
+    "pretty-ms": "^9.0.0",
+    "simply-djs": "^4.1.1"
+  }
+}
