@@ -1,4 +1,4 @@
-const { ChatInputCommandInteraction } = require("discord.js")
+const { ChatInputCommandInteraction, Collection } = require("discord.js")
 
 module.exports = {
     name: "interactionCreate",

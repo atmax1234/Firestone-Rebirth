@@ -4,7 +4,7 @@ const {RandomNumber} = require('../../data/functions/ImportantFunctions')
 require('mongoose');
 
 module.exports = {
-    cooldown: 50,
+    cooldown: 18000,
     data: new SlashCommandBuilder()
     .setName("beg")
     .setDescription("Try your luck you might get some money"),

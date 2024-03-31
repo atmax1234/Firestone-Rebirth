@@ -1,7 +1,7 @@
 const { ChatInputCommandInteraction, SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 const economySchema = require('../../models/Economy/economySchema');
 const {RandomNumber} = require('../../data/functions/ImportantFunctions');
-const ms = require('pretty-ms');
+const humanizeDuration = require('humanize-duration');
 const {goldCoin} = require('../../data/resources/emojis.json')
 require('mongoose');
 
@@ -22,7 +22,7 @@ module.exports = {
         if(balanceProfile){
             let timeout = 86400000
             if(timeout - (Date.now() - balanceProfile.daily) > 0){
-                let timeleft = ms(timeout - (Date.now() - balanceProfile.daily), {verbose: true})
+                let timeleft = humanizeDuration(timeout - (Date.now() - balanceProfile.daily), {largest: 2})
                 return interaction.reply({content: `You already claimed your reward for today!\nEstimated time: \`${timeleft}\``, ephemeral: true})
             }
             balanceProfile.daily = Date.now();

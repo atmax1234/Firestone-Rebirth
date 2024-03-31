@@ -1,0 +1,8 @@
+## [1.0.2] - 3/3/2024 6:00PM
+
+Models Folder: added new models for the mongoose schema.
+Commands Folder: Re-organized the folders adder an Information folder and removed the Public folder. The Ping Command is now in the Developer Folder with a developer only option enabled.
+Installed a new package called "discordjs-button-pagination-v2" to handle paginated embeds in discord
+Changed the "daily" command to use the 'humanizeDuration' package instead of 'pretty-ms' because of a module type error.
+
+Whats left is to finish the help command but first I should run a test on it to see if it console logs the name and description for the commands.
