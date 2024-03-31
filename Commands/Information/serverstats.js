@@ -65,9 +65,7 @@ module.exports = {
             xmlDoc.getElementsByTagName("ownerusername")[0].textContent;
           const country =
             xmlDoc.getElementsByTagName("countryname")[0].textContent;
-          const countryFlag = `http://static.gametracker.rs/flags/${
-            xmlDoc.getElementsByTagName("iso2")[0].textContent
-          }.png`;
+          const countryFlag = `${xmlDoc.getElementsByTagName("iso2")[0].textContent}`;
           const gamename =
             xmlDoc.getElementsByTagName("gamename")[0].textContent;
           const bestRank =
@@ -113,7 +111,8 @@ module.exports = {
               },
               { name: "Last Played Map: ", value: `${lastMap}`, inline: true },
               { name: "Current Map:", value: `${mapName}`, inline: true }
-            );
+            )
+            .setFooter({text: 'All the information is pulled from GameTracker.RS'});
           await interaction.reply({
             embeds: [serverEmbed],
             ephemeral: true,
